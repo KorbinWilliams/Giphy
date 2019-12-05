@@ -13,7 +13,8 @@ function _draw() {
 function _drawMyGifs() {
   let myGifs = store.State.myGifs
   let template = ""
-
+  myGifs.forEach(m => template += m.myGifsTemplate)
+  document.querySelector("#myGifs").innerHTML = template
 }
 
 //Public

@@ -14,7 +14,9 @@ export default class Gif {
     <div class="d-flex justify-content-center align-content-center gifsize">
         <img src="${this.url}"></img>
     </div>
-    <button onclick="app.gifController.addMyGifAsync(${this.id})"></button>
+    <div class="d-flex justify-content-center">
+        <button class="btn btn-success" onclick="app.gifController.addMyGifAsync('${this.id}')">Add to MyGifs</button>
+    </div>
         `
     }
 
