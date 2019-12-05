@@ -18,8 +18,8 @@ class GifService {
     debugger
     let res = await gifApi.get("")
     console.log("res", res.data)
-    let gifData = new Gif(res.data)
-    store.commit("gifs", res.data)
+    let gifData = new Gif(res.data.data)
+    store.commit("gifs", gifData)
   }
   constructor() {
 

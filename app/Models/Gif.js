@@ -1,14 +1,14 @@
 export default class Gif {
     constructor(data) {
         this.title = data.title
-        this.mp4 = data.image_mp4_url
-        this.user = data.user
+        this.user = data.user || ""
+        this.url = data.image_url
     }
 
     get Template() {
         return `
         <h3>${this.title}</h3>
-        <video src="${this.mp4}"></video>
+        <img src="${this.url}"></img>
         `
     }
 }

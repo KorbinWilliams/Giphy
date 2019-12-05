@@ -5,7 +5,7 @@ import store from "../store.js";
 function _draw() {
   let gif = store.State.gifs;
   let template = ""
-  gif.forEach(gif => template += gif.Template)
+  template += gif.Template
   console.log(gif);
   document.querySelector("#theRandoGif").innerHTML = template
 }
