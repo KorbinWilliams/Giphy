@@ -1,7 +1,7 @@
 import Gif from "./Models/Gif.js";
 
 let _state = {
-  activeGif: [],
+  myGifs: [],
   gifs: {}
 };
 

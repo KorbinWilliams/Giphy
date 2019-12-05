@@ -14,6 +14,11 @@ let myGifApi = axios.create({
 })
 
 class GifService {
+  async addMyGifAsync(id) {
+    let gifPost = store.State.gifs
+    let res = await myGifApi.post(gifPost)
+    store.commit("myGifs", gifPost)
+  }
   async randoGifAsync() {
     debugger
     let res = await gifApi.get("")

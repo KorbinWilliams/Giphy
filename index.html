@@ -11,40 +11,46 @@
     <title>Gifs</title>
 </head>
 
-<body>
-    <header class="container-fluid">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h1>Gifs (pronounced jif)</h1>
-                <p>"Steve Wilhite, the inventor of the widely used Web illustration, declared it should be pronounced
-                    “jif,” like the brand of peanut butter, rather than with a hard G sound."</p>
-            </div>
-        </div>
-    </header>
-    <main class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <button class="btn btn-primary" onclick="app.gifController.randoGifAsync()"></button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12" id="theRandoGif">
+<div class="bg-pb">
 
+    <body>
+        <header class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>Gifs (pronounced jif)</h1>
+                    <h3>"Steve Wilhite, the inventor of the widely used Web illustration, declared it should be
+                        pronounced
+                        “jif,” like the brand of peanut butter, rather than with a hard G sound."</h3>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <ol id="myGifs"></ol>
+        </header>
+        <main class="container-fluid contheight">
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-primary" onclick="app.gifController.randoGifAsync()">Get a Random
+                        Gif</button>
+                </div>
             </div>
-        </div>
+            <div class="row">
+                <div class="col-12" id="theRandoGif">
 
-    </main>
+                </div>
+            </div>
+        </main>
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <ol id="myGifs"></ol>
+                </div>
+            </div>
+        </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="app/main.js" type="module"></script>
-</body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="app/main.js" type="module"></script>
+    </body>
+</div>
 
 </html>

@@ -10,6 +10,12 @@ function _draw() {
   document.querySelector("#theRandoGif").innerHTML = template
 }
 
+function _drawMyGifs() {
+  let myGifs = store.State.myGifs
+  let template = ""
+
+}
+
 //Public
 export default class GifController {
   constructor() {
@@ -19,6 +25,14 @@ export default class GifController {
   async randoGifAsync() {
     try {
       await GifService.randoGifAsync()
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
+  async addMyGifAsync(id) {
+    try {
+      await GifService.addMyGifAsync(id)
     } catch (error) {
       console.error(error)
     }

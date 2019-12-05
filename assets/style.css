@@ -1,0 +1,12 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.bg-pb {
+  background-image: url(https://www.rd.com/wp-content/uploads/2018/01/This-Genius-Hack-Will-Change-the-Way-You-Store-Peanut-Butter-760x506.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
