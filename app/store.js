@@ -2,8 +2,7 @@ import Gif from "./Models/Gif.js";
 
 let _state = {
   activeGif: [],
-  /** @type {Gif[]} */
-  gifs: []
+  gifs: {}
 };
 
 /** Collection of listeners to be called based on keyed state changes
